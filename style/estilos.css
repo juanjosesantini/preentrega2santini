@@ -15,10 +15,9 @@ header{
     position: sticky;
     top:0px;
     z-index: 1;
-
 } 
 
-/* Personalizacion del color de fondo del boton comprar de las cards, del boton enviar y del color de fondo de la navbar de bootstrap*/
+/* Personalizacion del color de fondo del boton comprar de las cards, del boton enviar del formulario y del color de fondo de la navbar de bootstrap*/
 .bg{
     background-color:#a3c6e7;
 }
