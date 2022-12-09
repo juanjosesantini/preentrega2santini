@@ -1,0 +1,221 @@
+.grillaIndex {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "recomendados"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr 1fr 220px;
+    gap: 10px;
+    @include sizes(100%, 100vh);
+
+    @media(min-width:1024px) {
+        grid-template-rows: 170px 1fr 1fr 150px;
+    }
+}
+
+.recomendados-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+    @media(min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+
+.productos-figure {
+    img {
+        @include sizes(200px, 158px);
+    }
+
+    figcaption {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    @media(min-width:1024px) {
+        img {
+            @include sizes(251px, 199px);
+        }
+
+        figcaption {
+            width: 251px;
+        }
+    }
+}
+
+.grillaProductos {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "productosTortas"
+        "productosDulces"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr 1fr 1fr 220px;
+    gap: 10px;
+    @include sizes(100%, 100vh);
+
+    @media(min-width:1024px) {
+        grid-template-rows: 200px 1fr 1fr 1fr 150px;
+    }
+
+}
+
+.grillaRecetas {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "recetaspracticas"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr 1fr 220px;
+    gap: 10px;
+    @include sizes(100%, 100vh);
+}
+
+
+.recetas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    margin: 10px;
+
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        margin: 5px;
+    }
+
+}
+
+.receta-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.nosotros-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    @media(min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.nosotros {
+    padding: 5px;
+    @include sizes(132px, 198px);
+    border-radius: 20px;
+
+    @media(min-width:768px) {
+        padding: 10px;
+        margin: 10px;
+        @include sizes(197px, 296px);
+    }
+
+    @media(min-width:1024px) {
+        @include sizes(263px, 395px);
+    }
+}
+
+.grillaNosotros {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr 220px;
+    gap: 10px;
+    @include sizes(100%, 100vh);
+
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            ". main ."
+            "footer footer footer";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 180px 1fr 220px;
+        gap: 10px;
+        @include sizes(100%, 100vh);
+    }
+
+}
+
+.receta {
+    border: 3px groove #a3c6e7;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+
+    @media(min-width:1024px) {
+        margin: 40px;
+    }
+}
+
+.logo {
+    @include sizes($widhtlogo, $heightlogo);
+
+    @media(min-width:1024px) {
+        @include sizes($widhtlogo * 1.333, $heightlogo * 1.333);
+    }
+}
+
+.height-navbar {
+    @media(min-width:1024px) {
+        height: 150px;
+    }
+}
+
+footer {
+    background-color: $maincolor;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width:1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

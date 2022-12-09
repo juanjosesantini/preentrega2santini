@@ -1,0 +1,13 @@
+.animacion {
+    overflow: hidden;
+
+    img {
+        transition: all $transitiontime;
+    }
+
+    &:hover {
+        img {
+            transform: scale($scale);
+        }
+    }
+}

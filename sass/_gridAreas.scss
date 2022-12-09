@@ -1,0 +1,29 @@
+/* grid areas */
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.recomendados {
+    grid-area: recomendados;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.productosTortas {
+    grid-area: productosTortas;
+}
+
+.productosDulces {
+    grid-area: productosDulces;
+}
+
+.recetaspracticas {
+    grid-area: recetaspracticas;
+}

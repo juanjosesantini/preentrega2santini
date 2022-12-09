@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*mixin*/
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+body {
+    background-color: $bodycolor;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 10px;
+
+    &:hover {
+        color: black;
+    }
+}
+
+/* Personalización del color de fondo del boton de las cards, del botón enviar del formulario y del color de fondo de la navbar de bootstrap*/
+.bg {
+    background-color: $maincolor;
+}
+
+.metodoPagos {
+    li {
+        display: list-item;
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+    }
+}
+
+.img-receta {
+    padding: 5px;
+    @include sizes(286px, 226px);
+}
