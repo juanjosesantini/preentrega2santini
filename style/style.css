@@ -52,6 +52,20 @@ a:hover {
   height: 226px;
 }
 
+.carrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.carrito figcaption {
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: none;
+}
+
 .grillaIndex {
   display: grid;
   grid-template-areas: "header" "main" "recomendados" "footer";
@@ -64,6 +78,9 @@ a:hover {
 @media (min-width: 1024px) {
   .grillaIndex {
     grid-template-rows: 170px 1fr 1fr 150px;
+  }
+  .grillaIndex .navbar-brand {
+    display: contents;
   }
 }
 
@@ -121,6 +138,9 @@ a:hover {
   .grillaProductos {
     grid-template-rows: 200px 1fr 1fr 1fr 150px;
   }
+  .grillaProductos .navbar-brand {
+    display: contents;
+  }
 }
 
 .grillaRecetas {
@@ -131,6 +151,14 @@ a:hover {
   gap: 10px;
   width: 100%;
   height: 100vh;
+}
+@media (min-width: 1024px) {
+  .grillaRecetas {
+    grid-template-rows: 180px 1fr 1fr 150px;
+  }
+  .grillaRecetas .navbar-brand {
+    display: contents;
+  }
 }
 
 .recetas-grid {
@@ -216,10 +244,13 @@ a:hover {
     display: grid;
     grid-template-areas: "header header header" ". main ." "footer footer footer";
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 180px 1fr 220px;
+    grid-template-rows: 180px 1fr 150px;
     gap: 10px;
     width: 100%;
     height: 100vh;
+  }
+  .grillaNosotros .navbar-brand {
+    display: contents;
   }
 }
 
@@ -252,6 +283,12 @@ a:hover {
   }
 }
 
+@media (min-width: 1024px) {
+  .contacto .navbar-brand {
+    display: contents;
+  }
+}
+
 footer {
   background-color: #a3c6e7;
   text-align: center;
@@ -259,6 +296,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 @media (min-width: 1024px) {
   footer {
