@@ -12,8 +12,9 @@
 
     @media(min-width:1024px) {
         grid-template-rows: 170px 1fr 1fr 150px;
+
         .navbar-brand {
-            display:contents;
+            display: contents;
         }
     }
 }
@@ -76,8 +77,9 @@
 
     @media(min-width:1024px) {
         grid-template-rows: 200px 1fr 1fr 1fr 150px;
+
         .navbar-brand {
-            display:contents;
+            display: contents;
         }
     }
 
@@ -97,8 +99,9 @@
 
     @media(min-width:1024px) {
         grid-template-rows: 180px 1fr 1fr 150px;
+
         .navbar-brand {
-            display:contents;
+            display: contents;
         }
     }
 }
@@ -125,7 +128,7 @@
 .receta-flex {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 
     @media(min-width:768px) {
         display: flex;
@@ -190,7 +193,7 @@
         @include sizes(100%, 100vh);
 
         .navbar-brand {
-            display:contents;
+            display: contents;
         }
     }
 
@@ -224,7 +227,7 @@
 .contacto {
     @media(min-width:1024px) {
         .navbar-brand {
-            display:contents;
+            display: contents;
         }
     }
 }

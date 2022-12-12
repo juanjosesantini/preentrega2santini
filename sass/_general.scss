@@ -52,11 +52,12 @@ a {
     @include sizes(286px, 226px);
 }
 
-.carrito{
+.carrito {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    figcaption{    
+    align-items: center;
+
+    figcaption {
         margin: 10px;
         padding: 10px;
     }
