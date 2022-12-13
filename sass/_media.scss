@@ -11,7 +11,7 @@
     @include sizes(100%, 100vh);
 
     @media(min-width:1024px) {
-        grid-template-rows: 170px 1fr 1fr 150px;
+        grid-template-rows: 170px 1fr 1fr 130px;
 
         .navbar-brand {
             display: contents;
@@ -76,7 +76,7 @@
     @include sizes(100%, 100vh);
 
     @media(min-width:1024px) {
-        grid-template-rows: 200px 1fr 1fr 1fr 150px;
+        grid-template-rows: 200px 1fr 1fr 1fr 130px;
 
         .navbar-brand {
             display: contents;
@@ -98,7 +98,7 @@
     @include sizes(100%, 100vh);
 
     @media(min-width:1024px) {
-        grid-template-rows: 180px 1fr 1fr 150px;
+        grid-template-rows: 180px 1fr 1fr 130px;
 
         .navbar-brand {
             display: contents;
@@ -188,7 +188,7 @@
             ". main ."
             "footer footer footer";
         grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 180px 1fr 150px;
+        grid-template-rows: 180px 1fr 130px;
         gap: 10px;
         @include sizes(100%, 100vh);
 
@@ -203,10 +203,9 @@
     border: 3px groove #a3c6e7;
     border-radius: 20px;
     background-color: white;
-    padding: 10px;
-
+    padding-right: 5px;
     @media(min-width:1024px) {
-        margin: 40px;
+        margin: 20px;
     }
 }
 

@@ -39,14 +39,6 @@ a {
     background-color: $maincolor;
 }
 
-.metodoPagos {
-    li {
-        display: list-item;
-        font-family: 'Poppins', sans-serif;
-        font-size: small;
-    }
-}
-
 .img-receta {
     padding: 5px;
     @include sizes(286px, 226px);
