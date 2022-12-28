@@ -6,7 +6,7 @@
         "recomendados"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr 1fr 220px;
+    grid-template-rows: 180px 1fr 1fr 250px;
     gap: 10px;
     @include sizes(100%, 100vh);
 
@@ -71,7 +71,7 @@
         "productosDulces"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr 1fr 1fr 220px;
+    grid-template-rows: 180px 1fr 1fr 1fr 250px;
     gap: 10px;
     @include sizes(100%, 100vh);
 
@@ -93,7 +93,7 @@
         "recetaspracticas"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr 1fr 220px;
+    grid-template-rows: 180px 1fr 1fr 250px;
     gap: 10px;
     @include sizes(100%, 100vh);
 
@@ -177,7 +177,7 @@
         "main"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr 220px;
+    grid-template-rows: 180px 1fr 250px;
     gap: 10px;
     @include sizes(100%, 100vh);
 
@@ -203,7 +203,7 @@
     border: 3px groove #a3c6e7;
     border-radius: 20px;
     background-color: white;
-    padding-right: 5px;
+    padding: 5px;
     @media(min-width:1024px) {
         margin: 20px;
     }
@@ -238,7 +238,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
 
     @media(min-width:1024px) {
         display: flex;
